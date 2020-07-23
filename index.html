@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
   <head>
     <title>The Gallery of Horns</title>
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato:400i" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
+    <script id="photo-gallery" type="text/x-tmpl-mustache">
+      <article class="horned-template">
+        <h2><a href="{{url}}" target="_blank">{{title}}</a></h2>
+        <p><strong>Horns: </strong> {{horns}}</p>
+        <p><strong>Description: </strong> {{description}}</p>
+        <p><strong>Keyword: </strong> {{keyword}}</p>
+        <p>{{{body}}}</p>
+        <p><strong>Star rating: </strong> {{{stars}}}</p>
+      </article>
+    </script>
   </head>
   <body>
     <header>
