@@ -31,20 +31,23 @@
     background: lightseagreen;
     margin: 0 auto;
     max-width: 928px;
+    display: flex;
   }
    
-  #photo-gallery:after {
+ /* #photo-gallery:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
    
   .creature {
     width: 200px;
     padding: 1em;
     margin: 1em;
     background-color: white;
-    float: left;
+    display: flex;
+    flex-direction: column;
+   /* float: left; */
   }
    
   .creature h3 {
